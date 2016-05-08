@@ -1,5 +1,7 @@
 package ua.net.itlabs.operations;
 
+import com.codeborne.selenide.Configuration;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 import ua.net.itlabs.categories.Buggy;
@@ -9,7 +11,8 @@ import static ua.net.itlabs.pages.TodoMVC.*;
 import static ua.net.itlabs.pages.TodoMVC.TaskType.ACTIVE;
 import static ua.net.itlabs.pages.TodoMVC.TaskType.COMPLETED;
 
-public class TodosOperationsAtAllFilter {
+public class TodosOperationsAtAllFilter extends BaseTest{
+
 
     @Test
     @Category(Smoke.class)

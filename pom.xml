@@ -17,7 +17,9 @@
         <junit.version>4.12</junit.version>
         <surefire.version>2.19</surefire.version>
 
-        <suite></suite>
+        <suite>*Test</suite>
+        <driver.browser>firefox</driver.browser>
+
 
 
     </properties>
@@ -52,9 +54,10 @@
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
-                    <test>ua.net.itlabs.${suite}</test>
+                    <test>ua/net/itlabs/${suite}</test>
                     <systemPropertyVariables>
-                        <webdriver.chrome.driver>/Users/User/chromedriver</webdriver.chrome.driver>
+                        <webdriver.chrome.driver>C:/Users/User/chromedriver.exe</webdriver.chrome.driver>
+                        <driver.browser>${driver.browser}</driver.browser>
                     </systemPropertyVariables>
                     <properties>
                         <property>

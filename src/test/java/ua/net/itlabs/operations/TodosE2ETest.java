@@ -1,5 +1,7 @@
 package ua.net.itlabs.operations;
 
+import com.codeborne.selenide.Configuration;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 import ua.net.itlabs.categories.Smoke;
@@ -7,7 +9,7 @@ import ua.net.itlabs.categories.Smoke;
 import static ua.net.itlabs.pages.TodoMVC.*;
 
 @Category(Smoke.class)
-public class TodosE2ETest {
+public class TodosE2ETest extends BaseTest{
 
     @Test
     public void testTasksCommonFlow() {
