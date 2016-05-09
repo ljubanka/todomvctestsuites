@@ -10,5 +10,5 @@ import ua.net.itlabs.operations.TodosOperationsAtAllFilter;
 
 @RunWith(Categories.class)
 @Suite.SuiteClasses({TodosOperationsAtAllFilter.class, TodosE2ETest.class})
-public class FullSuiteTest {
+public class AllSuiteTest {
 }
